@@ -7,8 +7,8 @@ from airflow.operators.python_operator import PythonOperator
 
 default_args = {
     'owner': 'airflow',
-    retries': 5,
-    retry_delay': timedelta(minutes=2),
+    'retries': 5,
+    'retry_delay': timedelta(minutes=2),
 }
 
 
